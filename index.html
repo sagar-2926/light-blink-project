@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <img src="lightoff.png" id="bulb1" height="100px">
+    <img src="lightoff.png" id="bulb2" height="100px">
+    <img src="lightoff.png" id="bulb3" height="100px">
+    <img src="lightoff.png" id="bulb4" height="100px">
+    <img src="lightoff.png" id="bulb5" height="100px">
+
+    <br><br>
+
+     <button type="button" onclick="togglebulb(),togglebulb2(),togglebulb3(),togglebulb4(),togglebulb5()">
+       on/off
+     </button>
+
+    <script>
+    const Bulbelement1 = document.getElementById('bulb1')
+    const Bulbelement2 = document.getElementById('bulb2')
+    const Bulbelement3 = document.getElementById('bulb3')
+    const Bulbelement4 = document.getElementById('bulb4')
+    const Bulbelement5 = document.getElementById('bulb5')
+
+    let state = 1;
+    let state2 = 1;
+    let state3 = 1;
+    let state4 = 1;
+    let state5 = 1;
+
+     function togglebulb()
+     {
+        if (state==1)
+        {
+            Bulbelement1.src='green.png'
+            state= 2;
+        }
+        else if(state==2)
+        {
+         Bulbelement1.src='red.png'
+            state=3;
+        }
+        else if (state==3)
+        {
+            Bulbelement1.src='lighton.png'
+            state=4;
+        }
+        else 
+        {
+            Bulbelement1.src='lightoff.png'
+             state=1
+        }
+
+     }
+
+     function togglebulb2()
+     {
+        if (state2==1)
+        {
+            Bulbelement2.src='red.png'
+            state2= 2;
+        }
+        else if(state2==2)
+        {
+         Bulbelement2.src='lighton.png'
+            state2=3;
+        }
+        else if (state2==3)
+        {
+            Bulbelement2.src='lightoff.png'
+            state2=4;
+        }
+        else 
+        {
+            Bulbelement2.src='green.png'
+             state2=1
+        }
+
+     }
+     
+     function togglebulb3()
+     {
+        if (state3==1)
+        {
+            Bulbelement3.src='lighton.png'
+            state3= 2;
+        }
+        else if(state3==2)
+        {
+         Bulbelement3.src='lightoff.png'
+            state3=3;
+        }
+        else if (state3==3)
+        {
+            Bulbelement3.src='green.png'
+            state3=4;
+        }
+        else 
+        {
+            Bulbelement3.src='red.png'
+             state3=1
+        }
+
+     }
+     
+     function togglebulb4()
+     {
+        if (state4==1)
+        {
+            Bulbelement4.src='lightoff.png'
+            state4= 2;
+        }
+        else if(state4==2)
+        {
+         Bulbelement4.src='green.png'
+            state4=3;
+        }
+        else if (state4==3)
+        {
+            Bulbelement4.src='red.png'
+            state4=4;
+        }
+        else 
+        {
+            Bulbelement4.src='lighton.png'
+             state4=1
+        }
+
+     }
+     
+     function togglebulb5()
+     {
+        if (state5==1)
+        {
+            Bulbelement5.src='green.png'
+            state5= 2;
+        }
+        else if(state5==2)
+        {
+         Bulbelement5.src='red.png'
+            state5=3;
+        }
+        else if (state5==3)
+        {
+            Bulbelement5.src='lighton.png'
+            state5=4;
+        }
+        else 
+        {
+            Bulbelement5.src='lightoff.png'
+             state5=1
+        }
+
+     }
+     
+   
+   
+   
+   
+   </script>
+</body>
+</html>
